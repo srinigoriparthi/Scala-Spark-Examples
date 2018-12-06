@@ -15,7 +15,8 @@ object WordCountExample {
     //Read some example file to a test RDD
     val test = sc.textFile("D://DEVWORK//WORKSPACES//SampleInputFile.txt")
 
-    test.flatMap(line => line.split(" ")).map ( word => (word, 1))
+    test.flatMap(line => line.split(" "))
+      .map ( word => (word, 1))
       .reduceByKey(_ + _) //Sum all of the value with same key
       .saveAsTextFile("D://DEVWORK//WORKSPACES//OutPutFile.txt") //Save to a text file
 
