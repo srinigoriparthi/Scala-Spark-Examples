@@ -6,7 +6,7 @@ object BreakInForLoop {
   
   def main(args: Array[String]){
     
-    //Direct Breakable in For Loop 
+    //Direct Breakable in For Loop.
     breakable{
       for (i <- 1 to 10 by 2){
         if(i==7)
