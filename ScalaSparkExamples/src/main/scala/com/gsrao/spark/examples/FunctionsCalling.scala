@@ -26,7 +26,7 @@ object FunctionsCalling {
     a
   }
   
-  def someDefaultFunction(a:Int=0, b:Int=4):Int = {
+  def someDefaultFunction(a:Int=0, b:Int=4):Int ={
     a+b
   }
 }
