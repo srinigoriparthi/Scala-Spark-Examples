@@ -4,7 +4,7 @@ object ForLoop {
   
   def main(args: Array[String]){
    
-    println("====For Loop in Range=====")
+    println("====For Loop in Range======")
     for(a <- 1 to 5 ){
       println(a)
     }
