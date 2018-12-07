@@ -1,2 +1,3 @@
 /ScalaSparkExamples/
-**/*.class
+*.class
+*/target/
