@@ -1,5 +1,6 @@
 package com.gsrao.spark.examples
 
+
 object FunctionsWaysOfCalling {
   
   
