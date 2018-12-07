@@ -6,6 +6,7 @@ import org.apache.spark.rdd.RDD.rddToPairRDDFunctions
 
 object WordCountExample {
   
+  // Word Count Scala Spark Program
   def main(args: Array[String]) = {
 
     //Start the Spark context
