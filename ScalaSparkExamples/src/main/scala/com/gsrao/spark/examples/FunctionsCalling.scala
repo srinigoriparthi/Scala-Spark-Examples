@@ -6,6 +6,7 @@ package com.gsrao.spark.examples
 object FunctionsCalling {
   
   def main(args: Array[String]){    
+    
     var result = somefunction(10,20)
     println("Result from Function: "+result)
         
