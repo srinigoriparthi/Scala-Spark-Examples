@@ -11,6 +11,9 @@ object FunctionsCalling {
         
     var myresult = someResult()
     println("Result from MyResult: "+myresult)
+    
+    var defaultresult =  someDefaultFunction(2)
+    println("Result from default values Function:" + defaultresult)
   }
   
   def somefunction(a:Int,b:Int):Int = {
@@ -21,5 +24,9 @@ object FunctionsCalling {
   def someResult():Int = {
     var a = 10 
     a
+  }
+  
+  def someDefaultFunction(a:Int=0, b:Int=4):Int = {
+    a+b
   }
 }
