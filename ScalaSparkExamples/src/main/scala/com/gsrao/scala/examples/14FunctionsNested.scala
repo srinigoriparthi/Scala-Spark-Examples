@@ -17,7 +17,7 @@ object FunctionsNested {
   }
   
   def addingFunction(a:Int, b:Int, c:Int):Int = {
-    a+anotherNestedFunction(b,c)
+    a + anotherNestedFunction(b,c)
   }
   
   def anotherNestedFunction(b:Int, c:Int):Int = {
