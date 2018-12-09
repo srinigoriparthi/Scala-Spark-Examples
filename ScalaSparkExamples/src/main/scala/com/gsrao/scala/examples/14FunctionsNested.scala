@@ -5,7 +5,8 @@ package com.gsrao.scala.examples
  */
 
 /**
- * 	Scala is a first class function language which means it allows you to passing function, returning function, composing function, nested function etc. 
+ * 	Scala is a first class function language which means it allows you to passing 
+ 						function, returning function, composing function, nested function etc. 
 		An example below explain about how to define and call nested functions...
  */
 object FunctionsNested {
