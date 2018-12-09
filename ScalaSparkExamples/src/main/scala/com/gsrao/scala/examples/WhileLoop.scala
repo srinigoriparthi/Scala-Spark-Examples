@@ -1,4 +1,4 @@
-package com.gsrao.spark.examples
+package com.gsrao.scala.examples
 
 object WhileLoop {
   
