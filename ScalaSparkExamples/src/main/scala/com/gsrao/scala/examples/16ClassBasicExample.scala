@@ -61,7 +61,7 @@ object MainObject{
     var scr2 = new StudentRecord(102, "Rao")
     scr1.getRecord()
     scr2.getRecord()
-        println
+    println
     
     // Class Example with Anonymous
     new StudentAnonlymous(111,"Hello").recordAnonymous()
