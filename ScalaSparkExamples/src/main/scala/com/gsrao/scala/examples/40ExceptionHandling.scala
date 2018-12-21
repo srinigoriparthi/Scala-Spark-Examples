@@ -49,6 +49,22 @@ class MultipleExceptionCatch(){
 
 /**
  * O/P:
+ * Exception in thread "main" java.lang.Exception: Sorry you are not Eligible to Play !!
+ * 
+ */
+class ThorwException{
+  def validate(age:Int) = {
+    if(age < 18){
+      throw new Exception("Sorry you are not Eligible to Play !!")
+    }else{
+      println("You are welcome !!")
+    }
+    
+  }
+}
+
+/**
+ * O/P:
  * 	Exception caught: java.lang.ArrayIndexOutOfBoundsException: 10
     I am from Finally !!
     I am always prints !!
@@ -69,6 +85,18 @@ class FinallyCatchException{
   }
 }
 
+/**
+ * O/P:
+ * Exception Handled Here !!
+	 ================
+ */
+class ThrowsKeywordExample{
+  @throws(classOf[NumberFormatException])
+  def validate()={
+    "Hello".toInt
+  }
+}
+
 object ExceptionHandling {
   def main(args:Array[String]){
     var et = new ExceptionHandleTryCatch()
@@ -83,9 +111,21 @@ object ExceptionHandling {
     f.devide(100, 0)
     println("================")
     
+    var th = new ThrowsKeywordExample()
+    try{
+      th.validate()      
+    }catch{
+      case ex: NumberFormatException => println("Exception Handled Here !!")
+    }
+    println("================")
+    
+    var t = new ThorwException()
+    t.validate(10)
+    println("================")
+    
     var e = new ExceptionHandle()
     e.devide(100, 0);   
     println("================")
-       
+   
   }
 }
